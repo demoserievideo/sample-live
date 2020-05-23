@@ -41,5 +41,5 @@ jobs:
       with: 
         app-name: samplemeetup
         publish-profile: ${{ secrets.azureWebAppPublishProfile }}
-        package: ./sample
+        package: /home/runner/work/sample-live/sample-live/sample/netcore/
      
