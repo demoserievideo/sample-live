@@ -41,4 +41,5 @@ jobs:
       with: 
         app-name: samplemeetup
         publish-profile: ${{ secrets.azureWebAppPublishProfile }}
+        package: ./sample
      
