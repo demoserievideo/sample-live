@@ -43,5 +43,5 @@ jobs:
         publish-profile: ${{ secrets.azureWebAppPublishProfile }}
         package: ${{ env.workspace }}/sample/netcore
       env:
-        workspace: ${{ GITHUB_WORKSPACE }}
+        workspace: $GITHUB_WORKSPACE
      
