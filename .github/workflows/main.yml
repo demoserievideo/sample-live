@@ -32,7 +32,7 @@ jobs:
       working-directory: ./sample
     
     - name: Dotnet Publish
-      run: dotnet publish --configuration Release -o netcore 
+      run: dotnet publish --configuration Release -o ${{env.DOTNET_ROOT }}/netcore 
       working-directory: ./sample
 
        
@@ -41,5 +41,5 @@ jobs:
       with: 
         app-name: samplemeetup
         publish-profile: ${{ secrets.azureWebAppPublishProfile }}
-        package: ${{ env.GITHUB_WORKSPACE }}/sample/netcore
+        package: ${{env.DOTNET_ROOT }}/netcore
     
